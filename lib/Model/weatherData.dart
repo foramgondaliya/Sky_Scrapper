@@ -11,6 +11,10 @@ class WeatherData {
   final int cloud;
   final double feelslikeC;
   final double feelslikeF;
+  final String localtime;
+  final double uv;
+  final double pressure_in;
+  final double pressure_mb;
 
   WeatherData({
     required this.locationName,
@@ -25,10 +29,15 @@ class WeatherData {
     required this.cloud,
     required this.feelslikeC,
     required this.feelslikeF,
+    required this.localtime,
+    required this.uv,
+    required this.pressure_in,
+    required this.pressure_mb,
   });
 
   factory WeatherData.fromJson(Map<String, dynamic> json) {
     return WeatherData(
+      pressure_in: json['current']['pressure_in'],
       locationName: json['location']['name'],
       region: json['location']['region'],
       country: json['location']['country'],
@@ -41,6 +50,9 @@ class WeatherData {
       cloud: json['current']['cloud'],
       feelslikeC: json['current']['feelslike_c'],
       feelslikeF: json['current']['feelslike_f'],
+      localtime: json['location']['localtime'],
+      uv: json['current']['uv'],
+      pressure_mb: json['current']['pressure_mb'],
     );
   }
 }
