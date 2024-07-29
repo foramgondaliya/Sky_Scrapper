@@ -6,9 +6,11 @@ class SavedLocationsProvider with ChangeNotifier {
   Map<String, WeatherData> weatherDataMap = {};
 
   void addLocation(String location, WeatherData weatherData) {
-    savedLocations.add(location);
-    weatherDataMap[location] = weatherData;
-    notifyListeners();
+    if (!savedLocations.contains(location)) {
+      savedLocations.add(location);
+      weatherDataMap[location] = weatherData;
+      notifyListeners();
+    }
   }
 
   void removeLocation(String location) {

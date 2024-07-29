@@ -249,7 +249,6 @@ class _HomePageState extends State<HomePage> {
                                         arguments: currentWeatherData);
                                   },
                                   style: ElevatedButton.styleFrom(
-                                    // color: Colors.blueAccent,
                                     padding: EdgeInsets.symmetric(
                                         horizontal: 30, vertical: 15),
                                     textStyle: TextStyle(
