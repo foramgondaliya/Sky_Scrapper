@@ -28,3 +28,9 @@ The selected theme is saved in SharedPreferences, ensuring the app loads with th
 On the home screen, use the search bar to enter the name of the city you want to view.
 The app will display the current weather details for the selected city.
 
+
+
+![Screenshot_20240812_111030](https://github.com/user-attachments/assets/2dcce6e9-5a22-4aab-a977-dd77dabbf7bd)
+![Screenshot_20240812_111008](https://github.com/user-attachments/assets/e296cc51-da46-4c9e-8bf0-fe1d23660d33)
+![Screenshot_20240812_111315](https://github.com/user-attachments/assets/691cc0d3-af41-4a97-96a6-61a8a85cbb88)
+![Screenshot_20240812_111042](https://github.com/user-attachments/assets/c5e5e54d-cbfa-47f2-8bf3-4231c88b2913)
